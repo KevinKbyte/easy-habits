@@ -1,31 +1,24 @@
 {
   "name": "easy-habits",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
-  },
+  "version": "1.0.0",
+  "description": "Some say that starting a habit maybe the hardest part of getting into the routine. Easy-habits is a web app that can help you start and reach your goals of self-improvement. Investing in oneself is huge for your future, both financially and emotionally.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"", 
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinKbyte/easy-habits.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinKbyte/easy-habits/issues"
+  },
+  "homepage": "https://github.com/KevinKbyte/easy-habits#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0"
   }
 }
